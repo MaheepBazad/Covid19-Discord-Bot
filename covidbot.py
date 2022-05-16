@@ -22,4 +22,4 @@ for cog in os.listdir(f"D:\C C++\cogs"):
             print(f"{cog} cannot be loaded")
             raise e
 
-bot.run('OTc0NjMwNjQ2NTg2NzAzOTA0.G4AvzY.xKXCAkJAcRI1YNdF4RZsRtAa4hfK9yL6St-xWY')
+bot.run('TOKEN')

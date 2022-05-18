@@ -6,12 +6,16 @@ prefix = "!"
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=prefix, intents=intents)
 
+
 @bot.event
 async def on_ready():
     print("Ready!")
+
+
 @bot.command()
 async def hello(ctx):
     await ctx.send(f"Hey, {ctx.author.name}!")
+
 
 for cog in os.listdir(f"D:\C C++\cogs"):
     if cog.endswith(".py"):
@@ -22,4 +26,5 @@ for cog in os.listdir(f"D:\C C++\cogs"):
             print(f"{cog} cannot be loaded")
             raise e
 
-bot.run('TOKEN')
+bot.run("TOKEN")
+

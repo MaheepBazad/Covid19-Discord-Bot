@@ -42,7 +42,7 @@ class covid(commands.Cog):
                         "datasets": [
                             {
                                 "label": "Graph on COVID19 Data",
-                                "array": [{todayCases},{totalDeaths},{recovered}]
+                                "array": [todayCases,totalDeaths,recovered]
                             }
                         ],
                     },

@@ -42,7 +42,7 @@ class covid(commands.Cog):
                         "datasets": [
                             {
                                 "label": "Graph on COVID19 Data",
-                                "array": [todayCases,totalDeaths,recovered]
+                                "data": [totalCases, totalDeaths, recovered],
                             }
                         ],
                     },
@@ -85,3 +85,4 @@ class covid(commands.Cog):
 
 def setup(bot):
     bot.add_cog(covid(bot))
+

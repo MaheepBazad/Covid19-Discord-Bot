@@ -16,11 +16,12 @@ class india(commands.Cog):
 
             else:
                 url = "https://data.covid19india.org/data.json"
-                data = json.loads(requests.get(url).content)["statewise"]
-                state = data["state"]
-                totalCases = data["confirmed"]
-                totalDeaths = data["deaths"]
-                recovered = data["recovered"]
+                data = requests.get(url).json()
+                statewise_data = data["statewise"]
+                state = statewise_data["state"]
+                totalCases = statewise_data["confirmed"]
+                totalDeaths = statewise_data["deaths"]
+                recovered = statewise_data["recovered"]
 
                 embed = discord.Embed(
                     title=f"COVID19 data for {state}!",

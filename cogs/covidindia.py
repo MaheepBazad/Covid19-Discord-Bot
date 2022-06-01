@@ -9,7 +9,7 @@ class india(commands.Cog):
         self.bot = bot
 
     @commands.command(name="india")
-    async def covidindia(self, ctx, *, state=None):
+    async def india(self, ctx, *, state=None):
         try:
             if state is None:
                 await ctx.send("Add state's name to the command!")

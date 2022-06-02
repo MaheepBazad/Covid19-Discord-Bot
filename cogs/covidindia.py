@@ -22,7 +22,7 @@ class india(commands.Cog):
                 }
                 data = requests.get(url, headers=headers).json()
                 state = data[f'{state}']["state"]
-                totalCases = data[f'{state}']["total"]
+                totalCases = data[f'{state}']["confirm"]
                 totalDeaths = data[f'{state}']["death"]
                 recovered = data[f'{state}']["cured"]
                 qc = QuickChart()
